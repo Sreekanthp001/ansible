@@ -9,7 +9,7 @@
       msg: "Hello, {{ person | default('Ramesh') }}"
 
   - name: print names
-    ansible.builtlin.debug:
+    ansible.builtin.debug:
       msg: "Hello {{ persons | split(',') }}"
 
   - name: convert map into list
